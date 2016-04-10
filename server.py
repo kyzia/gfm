@@ -67,7 +67,7 @@ def getmail(data):
 
         response_dict[uid]['attachments']=download_attachments_in_email(email_message, curent_dir)
         response_dict[uid]['date']=email.utils.parsedate(email_message.get('date'))        
-        response_dict[uid]['Subject']=email_message.get('Subject')
+        response_dict[uid]['Subject']=email.header.decode_header(email_message.get('Subject'))
         response_dict[uid]['From']=email_message.get('From')
         response_dict[uid]['To']=email_message.get('To')
     return dumps(response_dict)
