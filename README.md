@@ -22,7 +22,7 @@ Answer.
 -------------------------
     {"586": {"text": "\r\n\r\nTot \r\n\r\n\r\n", "attachments": {"0": "6.jpg"}}, "588": {"text": "\r\n\r\nSmth \r\n\r\n\r\n", "attachments": {"0": "7.jpg"}}}
 
-Attachments is downloaded to the workdir (and /account_name/mail_uid/ path will be created).
+Attachments will be downloaded to the workdir (and /account_name/mail_uid/ path will be created).
 
     cd gfm; ls testaccount/586/
     
